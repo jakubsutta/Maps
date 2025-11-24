@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moje mapové portfolio</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        background: #f7f7f7;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .item {
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .name {
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    a { text-decoration: none; color: black; }
+</style>
+</head>
+<body>
+
+<h1>Moje mapy a infografiky</h1>
+
+<div class="grid">
+
+    <!-- SEM SE AUTOMATICKY VLOŽÍ PRVKY -->
+    <!-- DOKUD NEŘEKNEŠ, JAK SE TVOJE MAPY JMENUJÍ,
+         PONECHÁM TADY DEMO VZOR -->
+
+    <div class="item">
+        <a href="mapa1.pdf" target="_blank">
+            <img src="mapa1.png" alt="Mapa 1">
+            <div class="name">Mapa 1</div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="mapa2.pdf" target="_blank">
+            <img src="mapa2.png" alt="Mapa 2">
+            <div class="name">Mapa 2</div>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
